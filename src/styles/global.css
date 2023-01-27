@@ -1,3 +1,97 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Aboreto";
+  font-style: normal;
+  font-display: swap;
+  src: url(/fonts/Aboreto-Regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-display: swap;
+  src: url(/fonts/Poppins-Regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: bold;
+  font-display: swap;
+  src: url(/fonts/Poppins-Bold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+  src: url(/fonts/Poppins-BoldItalic.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: italic;
+  font-display: swap;
+  src: url(/fonts/Poppins-Italic.woff2) format("woff2");
+}
+
+@layer base {
+  ol {
+    list-style-type: decimal;
+  }
+
+  input,
+  select,
+  textarea {
+    @apply w-full rounded-sm border border-slate-600 px-4 py-2;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply cursor-pointer rounded-sm bg-yellow-500 py-2 px-4 text-center font-bold uppercase !text-black no-underline transition-colors hover:bg-yellow-400;
+  }
+}
+
+.wpcf7-form {
+  input[type="submit"] {
+    @apply btn border-none;
+  }
+}
+
+.wp-site-blocks {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    &:not(:first-child) {
+      @apply mt-6;
+    }
+    &:not(:last-child) {
+      @apply mb-6;
+    }
+  }
+}
+
+.wp-site-blocks {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    &:not(:first-child) {
+      @apply mt-6;
+    }
+    &:not(:last-child) {
+      @apply mb-6;
+    }
+  }
+}

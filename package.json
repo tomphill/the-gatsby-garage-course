@@ -22,7 +22,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.2.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@tailwindcss/nesting": "^0.0.0-insiders.565cd3e",
-    "@webdeveducation/wp-block-tools": "^1.1.7",
+    "@webdeveducation/wp-block-tools": "^1.1.19",
     "gatsby": "^5.3.3",
     "gatsby-plugin-apollo": "^4.0.3",
     "gatsby-plugin-image": "^3.3.2",
