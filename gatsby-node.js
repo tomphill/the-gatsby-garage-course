@@ -39,8 +39,8 @@ exports.createPages = async ({ actions, graphql }) => {
 
   for (let i = 0; i < allPages.length; i++) {
     const page = allPages[i];
-    let blocks = page.blocks;
-    blocks = assignIds(blocks);
+    let blocks = page.blocks || [];
+    blocks = assignIds(blocks || []);
     blocks = await assignGatsbyImage({
       blocks,
       graphql,
